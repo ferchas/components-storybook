@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^4.0.6",
+    "@storybook/addon-links": "^4.0.6",
+    "@storybook/react": "^4.0.6",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4"
+  },
+  "dependencies": {
+    "@babel/core": "^7.1.6",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "require-context": "^1.1.0",
+    "storybook": "^1.0.0"
+  }
+}

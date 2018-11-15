@@ -1,0 +1,38 @@
+[
+  {
+    "label": "item1",
+    "list": [ 
+      {
+        "label": "A"
+      },
+      {
+        "label": "B"
+      },
+      {
+        "label": "c"
+      }
+    ]
+  },
+  {
+    "label": "item2"
+  },
+  {
+    "label": "item3",
+    "list": [ 
+      {
+        "label": "A",
+        "list": [ 
+          {
+            "label": "A1"
+          },
+          {
+            "label": "B2"
+          }
+        ]
+      },
+      {
+        "label": "B"
+      }
+    ]
+  }
+]
