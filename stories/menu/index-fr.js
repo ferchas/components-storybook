@@ -5,14 +5,23 @@ class Menu extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      clicked: true,
+    };
+
     this.printElement = this.printElement.bind(this);
+    this.handlerClicked = this.handlerClicked.bind(this);
+  }
+
+  handlerClicked() {
+    this.setState({ clicked: false });
   }
 
   printElement(element) {
     return  element.map(e => (
-      <ul>
+      <ul className={`${this.state.clicked ? 'clicked': '' }`}>
         <li>
-          <span>{e.label}</span>
+          <span onClick={this.props.action(this.handlerClicked)} >{e.label}</span>
           {e.list && this.printElement(e.list)}
         </li>
       </ul>
